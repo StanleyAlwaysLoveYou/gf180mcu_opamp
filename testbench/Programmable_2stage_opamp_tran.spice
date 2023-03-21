@@ -1,0 +1,71 @@
+.include /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+
+
+.param  sw_stat_mismatch = 0
+.param  sw_stat_global = 0
+
+.include ../netlist/Programmable_2stage_opamp.spice
+
+V1 vdd GND 3.3
+V2 vss GND 0
+V3 vin1 GND dc 1.4 ac 1 SIN(1.4 10m 10MEG 0)
+V4 vin2 GND dc 1.4 ac 0 SIN(1.4 -10m 10MEG 0)
+V5 vp GND dc 0
+
+
+
+.save i(v1)
+.save i(v2)
+.save i(v3)
+.save i(v4)
+.save i(v5)
+.save all
+
+.control
+
+let begin = 1.2
+let step = 0.1
+let final = 1.2
+let test = begin
+
+set color0 = white
+set color1 = black
+set hcopydevtype = svg
+setcs svg_stropts = ( black Arial Arial )
+
+
+
+set tranout = ' '
+
+
+let test = a
+
+while test le final
+
+    alter @v5[dc] = test
+    print @v5[dc]
+    let test = test + step
+
+    tran 1ns 5us 0
+
+    set tranout = ( $tranout ({$curplot}.vout) )
+
+end
+
+
+
+plot $tranout xlabel Time(ns) ylabel Output(V) title Output_Signal
+
+hardcopy ../output/Transient.svg $tranout xlabel Time(ns) ylabel Output title 'OTA_2stage Transient Plot(ss)'
+
+
+.endc
+
+
+.GLOBAL GND
+
+.end

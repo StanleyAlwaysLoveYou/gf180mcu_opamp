@@ -1,0 +1,85 @@
+.include /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+.lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+
+
+.param  sw_stat_mismatch = 0
+.param  sw_stat_global = 0
+
+.include ../netlist/Programmable_2stage_opamp.spice
+
+V1 vdd GND 3.3
+V2 vss GND 0
+V3 vin1 GND dc 1.4 ac 1
+V4 vin2 GND dc 1.4 ac 0 
+V5 vp GND dc 0
+
+
+
+.save i(v1)
+.save i(v2)
+.save i(v3)
+.save i(v4)
+.save i(v5)
+.save all
+
+.control
+
+let begin = 1.2
+let step = 0.1
+let final = 1.2
+let test = begin
+
+set color0 = white
+set color1 = black
+set hcopydevtype = svg
+setcs svg_stropts = ( black Arial Arial )
+
+
+
+set gain = ' '
+set phasedeg = ' '
+
+
+let test = a
+
+while test le final
+
+    alter @v5[dc] = test
+    print @v5[dc]
+    let test = test + step
+
+    ac dec 10 1 300MEG
+
+    let phase = {57.29*vp(vout)}-180
+    set gain = ( $gain db({$curplot}.vout) )
+    set phasedeg = ( $phasedeg ({$curplot}.phase) )
+    let dbvout = db(vout)
+
+
+    meas ac dc_gain find dbvout at=10
+    meas ac bandwidth when dbvout=0
+    let pm = phase +180
+    meas ac phase_margin find pm at=bandwidth
+
+end
+
+
+
+plot $gain xlabel Frequency(Hz) ylabel Gain(db) title Gain(dB)
+plot $phasedeg xlabel Frequency(Hz) ylabel Phase(deg) title Phase(deg)
+
+
+
+hardcopy ../output/Gain.svg $gain xlabel Frequency(Hz) ylabel Gain(db) title 'OTA_2stage Gain(tt)'
+hardcopy ../outputPhase.svg $phasedeg xlabel Frequency(Hz) ylabel Phase(deg) title 'OTA_2stage Phase(tt)'
+
+
+.endc
+
+
+.GLOBAL GND
+
+.end
