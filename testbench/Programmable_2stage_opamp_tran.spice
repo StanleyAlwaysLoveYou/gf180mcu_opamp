@@ -60,7 +60,7 @@ end
 
 plot $tranout xlabel Time(ns) ylabel Output(V) title Output_Signal
 
-hardcopy ../output/Transient.svg $tranout xlabel Time(ns) ylabel Output title 'OTA_2stage Transient Plot(ss)'
+hardcopy ../output/Transient.svg $tranout xlabel Time(ns) ylabel Output title 'OTA_2stage Transient Plot'
 
 
 .endc

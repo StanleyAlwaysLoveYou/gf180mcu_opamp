@@ -1,0 +1,122 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  width="100%" height="100%" viewBox="0 0 1024 768"
+  style="fill: none; font-family: Arial;
+ font: Arial;
+">
+
+<!-- Creator: NGspice -->
+
+<rect x="0" y="0" width="1024" height="768" fill="white" stroke="none"/>
+<text stroke="none" fill="black" font-size="16" x="358" y="752">
+Power(mW)
+</text>
+<text transform="rotate(-90, 20, 444)"  stroke="none" fill="black" font-size="16" x="20" y="444">
+Phase_margin
+</text>
+<text stroke="none" fill="black" font-size="16" x="10" y="16">
+ac39: OTA_2stage_PM_vs_Power
+</text>
+<path stroke="black" d="M85 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="70" y="728">
+0.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M164 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="149" y="728">
+1.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M243 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="228" y="728">
+2.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M322 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="307" y="728">
+3.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M401 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="386" y="728">
+4.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M480 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="465" y="728">
+5.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M559 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="544" y="728">
+6.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M638 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="623" y="728">
+7.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M717 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="702" y="728">
+8.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M796 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="781" y="728">
+9.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M875 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="855" y="728">
+10.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M954 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="934" y="728">
+11.0
+</text>
+<text stroke="none" fill="black" font-size="16" x="614" y="752">
+m     
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 704l869 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="712">
+52.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 633l869 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="641">
+53.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 562l869 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="570">
+54.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 491l869 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="499">
+55.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 420l869 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="428">
+56.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 349l869 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="357">
+57.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 278l869 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="286">
+58.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 207l869 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="215">
+59.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 136l869 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="144">
+60.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 65l869 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="73">
+61.0
+</text>
+<text stroke="none" fill="black" font-size="16" x="10" y="32">
+     
+</text>
+<path stroke="red" d="M434 23l43 0"/>
+<text stroke="none" fill="black" font-size="16" x="487" y="32">
+phase_margins
+</text>
+<path stroke="red" d="M842 630l49 21M793 618l49 12M744 611l49 7M695 600l49 11M647 586l48 14M600 569l47 17M554 563l46 6M510 560l44 3M467 551l43 9M426 531l41 20M387 513l39 18M350 500l37 13M315 470l35 30M282 432l33 38M251 398l31 34M223 333l28 65"/>
+<path stroke="red" d="M197 283l26 50M173 198l24 85M152 105l21 93"/>
+</svg>

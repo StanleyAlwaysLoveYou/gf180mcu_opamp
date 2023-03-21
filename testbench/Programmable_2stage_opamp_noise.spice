@@ -83,10 +83,10 @@ end
 
 
 plot $inoise xlabel Power(mW) ylabel Integrated_Noise(uV) title Integrated_Noise
-plot n vs power xlabel Power(mW) ylabel Integrated_Noise(uV) title 'OTA_2stage Integrated_Noise_vs_Power(tt)'
+plot n vs power xlabel Power(mW) ylabel Integrated_Noise(uV) title 'OTA_2stage Integrated_Noise_vs_Power'
 
-hardcopy ../output/Noise.svg $inoise xlabel  Frequency(Hz) ylabel Integrated_Noise(uV) title 'OTA_2stage Integrated_Noise(tt)'
-hardcopy ../output/Noise_vs_Power.svg n vs power xlabel Power(mW) ylabel Integrated_Noise(uV) title 'OTA_2stage Integrated_Noise_vs_Power(tt)'
+hardcopy ../output/Noise.svg $inoise xlabel  Frequency(Hz) ylabel Integrated_Noise(uV) title 'OTA_2stage Integrated_Noise'
+hardcopy ../output/Noise_vs_Power.svg n vs power xlabel Power(mW) ylabel Integrated_Noise(uV) title 'OTA_2stage Integrated_Noise_vs_Power'
 
 
 

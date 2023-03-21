@@ -27,10 +27,11 @@ V5 vp GND dc 0
 
 .control
 
-let begin = 1.2
+let begin = 0
 let step = 0.1
-let final = 1.2
+let final = 2
 let test = begin
+let cnt = 0
 
 set color0 = white
 set color1 = black
@@ -41,9 +42,34 @@ setcs svg_stropts = ( black Arial Arial )
 
 set gain = ' '
 set phasedeg = ' '
+let ind = ((final-begin)/step)
+let dc_gains = vector(ind)
+let bandwidths = vector(ind)
+let phase_margins = vector(ind)
+let power = vector(ind)
 
 
-let test = a
+let test = begin
+while test le final
+
+    alter @v5[dc] = test
+    print @v5[dc]
+    let test = test + step
+
+    op
+
+    let ic = v1#branch
+    let power[cnt] = 3.3*(-ic)
+    print power[cnt]
+    let cnt = cnt + 1
+
+end
+
+
+
+
+let test = begin
+let cnt = 0
 
 while test le final
 
@@ -64,18 +90,29 @@ while test le final
     let pm = phase +180
     meas ac phase_margin find pm at=bandwidth
 
+    let dc_gains[cnt] = dc_gain
+    let bandwidths[cnt] = bandwidth
+    let phase_margins[cnt] = phase_margin
+
+    let cnt = cnt + 1
+    
+
 end
 
 
 
 plot $gain xlabel Frequency(Hz) ylabel Gain(db) title Gain(dB)
 plot $phasedeg xlabel Frequency(Hz) ylabel Phase(deg) title Phase(deg)
+plot dc_gains vs power xlabel Power(mW) ylabel Gain(db) title OTA_2stage_Gain_vs_Power
+plot bandwidths vs power xlabel Power(mW) ylabel Frequency(Hz) title OTA_2stage_GBW_vs_Power
+plot phase_margins vs power xlabel Power(mW) ylabel Phase_margin title OTA_2stage_PM_vs_Power
 
 
-
-hardcopy ../output/Gain.svg $gain xlabel Frequency(Hz) ylabel Gain(db) title 'OTA_2stage Gain(tt)'
-hardcopy ../outputPhase.svg $phasedeg xlabel Frequency(Hz) ylabel Phase(deg) title 'OTA_2stage Phase(tt)'
-
+hardcopy ../output/Gain.svg $gain xlabel Frequency(Hz) ylabel Gain(db) title 'OTA_2stage Gain'
+hardcopy ../output/Phase.svg $phasedeg xlabel Frequency(Hz) ylabel Phase(deg) title 'OTA_2stage Phase'
+hardcopy ../output/Gain_vs_Power.svg dc_gains vs power xlabel Power(mW) ylabel Gain(db) title 'OTA_2stage_Gain_vs_Power'
+hardcopy ../output/GBW_vs_Power.svg bandwidths vs power xlabel Power(mW) ylabel Frequency(Hz) title 'OTA_2stage_GBW_vs_Power'
+hardcopy ../output/PM_vs_Power.svg phase_margins vs power xlabel Power(mW) ylabel Phase_margin title 'OTA_2stage_PM_vs_Power'
 
 .endc
 
