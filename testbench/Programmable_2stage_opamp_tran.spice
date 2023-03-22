@@ -12,10 +12,11 @@
 
 V1 vdd GND 3.3
 V2 vss GND 0
-V3 vin1 GND dc 1.4 ac 1 SIN(1.4 10m 10MEG 0)
-V4 vin2 GND dc 1.4 ac 0 SIN(1.4 -10m 10MEG 0)
-V5 vp GND dc 0
-
+V3 vin1 GND dc 0.8 ac 1 SIN(0.8 1m 10MEG 0)
+V4 vin2 GND dc 0.8 ac 0 SIN(0.8 -1m 10MEG 0)
+V5 vprog GND dc 0
+V6 vbiasp GND dc 0.9
+V7 vbiasn GND dc 1
 
 
 .save i(v1)
@@ -27,9 +28,9 @@ V5 vp GND dc 0
 
 .control
 
-let begin = 1.2
+let begin = 2
 let step = 0.1
-let final = 1.2
+let final = 2
 let test = begin
 
 set color0 = white
@@ -50,7 +51,7 @@ while test le final
     print @v5[dc]
     let test = test + step
 
-    tran 1ns 5us 0
+    tran 10ns 100u 0
 
     set tranout = ( $tranout ({$curplot}.vout) )
 

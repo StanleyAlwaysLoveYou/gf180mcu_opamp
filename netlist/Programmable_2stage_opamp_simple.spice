@@ -1,0 +1,68 @@
+
+** Library name: low_noise_opamp
+** Cell name: opamp2_nodw
+** View name: schematic
+xmp13<2> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmp13<1> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmp13<0> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmp14<1> vout net1 vdd vdd pfet_03v3 w=75e-6 l=300e-9 nf=1
+xmp14<2> vout net1 vdd vdd pfet_03v3 w=75e-6 l=300e-9 nf=1 
+xmp22<3> net14 vin2 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmp22<2> net14 vin2 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmp22<1> net14 vin2 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmp22<0> net14 vin2 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1
+xmp21<3> net13 vin1 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmp21<2> net13 vin1 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmp21<1> net13 vin1 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmp21<0> net13 vin1 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn26<2> vdd vdd vdd vdd pfet_03v3 w=50e-6 l=300e-9 nf=1
+xmn26<1> vdd vdd vdd vdd pfet_03v3 w=50e-6 l=300e-9 nf=1 
+xmn26<0> vdd vdd vdd vdd pfet_03v3 w=50e-6 l=300e-9 nf=1 
+xmp30 net17 net17 vdd vdd pfet_03v3 w=2e-6 l=3e-6 nf=1 
+xmp29 net16 net15 vdd vdd pfet_03v3 w=2e-6 l=3e-6 nf=1 
+xmp28 net15 net15 vdd vdd pfet_03v3 w=2e-6 l=3e-6 nf=1 
+xmp27 vtailp net15 vdd vdd pfet_03v3 w=100e-6 l=3e-6 nf=1 
+xmp26 net8 vprog vdd vdd pfet_03v3 w=2e-6 l=3e-6 nf=1 
+xmp25 iabp iabp net17 vdd pfet_03v3 w=10e-6 l=1e-6 nf=1 
+xmp24 iabn net11 net16 vdd pfet_03v3 w=10e-6 l=1e-6 nf=1 
+xmp23 net11 net11 net15 vdd pfet_03v3 w=10e-6 l=1e-6 nf=1 
+xmp20 net6 iabp net1 vdd pfet_03v3 w=10e-6 l=1e-6 nf=1 
+xmp19 net3 vbiasp net5 vdd pfet_03v3 w=40e-6 l=3e-6 nf=1 
+xmp18 net1 vbiasp net4 vdd pfet_03v3 w=40e-6 l=3e-6 nf=1 
+xmp17 net5 net3 vdd vdd pfet_03v3 w=100e-6 l=3e-6 nf=1 
+xmp16 net4 net3 vdd vdd pfet_03v3 w=100e-6 l=3e-6 nf=1 
+xmp15 net2 iabp net3 vdd pfet_03v3 w=10e-6 l=1e-6 nf=1 
+xmn24 vdd vdd vdd vdd pfet_03v3 w=45e-6 l=1e-6 nf=1
+xmn23 vdd vdd vdd vdd pfet_03v3 w=44e-6 l=3e-6 nf=1 
+xc4<0> net1 vout cap_mim_2f0_m4m5_noshield c_length=25e-6 c_width=25e-6 m=4
+xc5<0> net6 vout cap_mim_2f0_m4m5_noshield c_length=25e-6 c_width=25e-6 m=4
+xmn25<4> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn25<3> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn25<2> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn25<1> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn25<0> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn43<3> net4 vin2 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn43<2> net4 vin2 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn43<1> net4 vin2 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn43<0> net4 vin2 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn42<3> net5 vin1 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn42<2> net5 vin1 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn42<1> net5 vin1 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn42<0> net5 vin1 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
+xmn44 net1 iabn net6 vss nfet_03v3 w=10e-6 l=1e-6 nf=1
+xmn41 net3 iabn net2 vss nfet_03v3 w=10e-6 l=1e-6 nf=1
+xmn40 vout net6 vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 1
+xmn39 net6 vbiasn net14 vss nfet_03v3 w=20e-6 l=1e-6 nf=1
+xmn38 net2 vbiasn net13 vss nfet_03v3 w=20e-6 l=1e-6 nf=1
+xmn37 net14 net2 vss vss nfet_03v3 w=20e-6 l=1e-6 nf=1
+xmn36 net13 net2 vss vss nfet_03v3 w=20e-6 l=1e-6 nf=1
+xmn35 net10 net12 vss vss nfet_03v3 w=2e-6 l=1e-6 nf=1 
+xmn34 vtailn net12 vss vss nfet_03v3 w=100e-6 l=1e-6 nf=1 
+xmn33 net12 net12 vss vss nfet_03v3 w=20e-6 l=1e-6 nf=1 
+xmn32 net9 net9 vss vss nfet_03v3 w=2e-6 l=1e-6 nf=1 
+xmn31 net7 net12 vss vss nfet_03v3 w=2e-6 l=1e-6 nf=1 
+xmn30 net8 net8 net12 vss nfet_03v3 w=20e-6 l=1e-6 nf=1 
+xmn29 net11 net8 net10 vss nfet_03v3 w=220e-9 l=1e-6 nf=1 
+xmn28 iabn iabn net9 vss nfet_03v3 w=10e-6 l=1e-6 nf=1 
+xmn27 iabp net8 net7 vss nfet_03v3 w=10e-6 l=1e-6 nf=1 
+xmn22 vss vss vss vss nfet_03v3 w=9e-6 l=1e-6 nf=1 p=0 

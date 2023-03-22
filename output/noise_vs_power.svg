@@ -17,88 +17,110 @@ Power(mW)
 Integrated_Noise(uV)
 </text>
 <text stroke="none" fill="black" font-size="16" x="10" y="16">
-noise1: OTA_2stage Integrated_Noise_vs_Power(tt)
+noise73: OTA_2stage Integrated_Noise_vs_Power
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="55" y="728">
-3.00
+<path stroke="black" d="M85 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="70" y="728">
+0.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M203 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="183" y="728">
-3.10
+<path stroke="black" stroke-dasharray="1,2" d="M158 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="143" y="728">
+1.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M331 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="311" y="728">
-3.20
+<path stroke="black" stroke-dasharray="1,2" d="M231 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="216" y="728">
+2.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M459 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="439" y="728">
-3.30
+<path stroke="black" stroke-dasharray="1,2" d="M304 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="289" y="728">
+3.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M587 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="567" y="728">
-3.40
+<path stroke="black" stroke-dasharray="1,2" d="M377 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="362" y="728">
+4.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M715 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="695" y="728">
-3.50
+<path stroke="black" stroke-dasharray="1,2" d="M450 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="435" y="728">
+5.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M843 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="823" y="728">
-3.60
+<path stroke="black" stroke-dasharray="1,2" d="M523 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="508" y="728">
+6.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M971 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="951" y="728">
-3.70
+<path stroke="black" stroke-dasharray="1,2" d="M596 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="581" y="728">
+7.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M669 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="654" y="728">
+8.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M742 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="727" y="728">
+9.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M815 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="795" y="728">
+10.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M888 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="868" y="728">
+11.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M961 704l0 -639"/>
+<text stroke="none" fill="black" font-size="16" x="941" y="728">
+12.0
 </text>
 <text stroke="none" fill="black" font-size="16" x="614" y="752">
 m     
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 704l896 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="712">
-7.0
+<path stroke="black" d="M85 704l876 0"/>
+<text stroke="none" fill="black" font-size="16" x="53" y="712">
+0.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 633l896 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 633l876 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="641">
-7.2
+10.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 562l896 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 562l876 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="570">
-7.4
+20.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 491l896 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 491l876 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="499">
-7.6
+30.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 420l896 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 420l876 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="428">
-7.8
+40.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 349l896 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 349l876 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="357">
-8.0
+50.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 278l896 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 278l876 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="286">
-8.2
+60.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 207l896 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 207l876 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="215">
-8.4
+70.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 136l896 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 136l876 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="144">
-8.6
+80.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 65l896 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 65l876 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="73">
-8.8
+90.0
 </text>
 <text stroke="none" fill="black" font-size="16" x="10" y="32">
 u     
 </text>
-<path stroke="red" d="M448 23l44 0"/>
-<text stroke="none" fill="black" font-size="16" x="502" y="32">
+<path stroke="red" d="M438 23l43 0"/>
+<text stroke="none" fill="black" font-size="16" x="491" y="32">
 n
 </text>
+<path stroke="red" d="M895 667l39 0M854 666l41 1M811 666l43 0M767 665l44 1M722 664l45 1M675 662l47 2M629 661l46 1M584 658l45 3M540 656l44 2M498 653l42 3M457 650l41 3M417 646l40 4M379 643l38 3M342 638l37 5M307 633l35 5M274 627l33 6M243 620l31 7"/>
+<path stroke="red" d="M214 610l29 10M188 596l26 14M163 577l25 19M141 548l22 29M122 499l19 49M106 399l16 100M94 94l12 305"/>
 </svg>

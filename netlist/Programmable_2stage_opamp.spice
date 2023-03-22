@@ -1,105 +1,68 @@
-*********************************************************************************
 
-** sch_path: /home/lmadhu/openmpw/pdk_1/Project_gf180_tp/xschem/Amplifiers/OTA_2stage.sch
-
-**.subckt OTA_2stage vout vin1 vin2 vdd vss vp
-
-*.opin vout
-
-*.ipin vin1
-
-*.ipin vin2
-
-*.iopin vdd
-
-*.iopin vss
-
-*.ipin vp
-
-********************************************************************************
-
-****Differential NMOS Input pairs 
-****(multiplicity doesnot work in the model. Multiple NMOS cells (for m=18 and W/L= 100u/1u) should be written manually)
-
-XM1 vx vin1 vtail vss nfet_03v3 L=1u W=100u nf=500 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-
-+ sa=0 sb=0 sd=0 m=18
-
-XM2 net1 vin2 vtail vss nfet_03v3 L=1u W=100u nf=500 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-
-+ sa=0 sb=0 sd=0 m=18
-
-*****PMOS active load pairs
-
-XM3 vx vx vdd vdd pfet_03v3 L=2u W=50u nf=50 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-
-+ sa=0 sb=0 sd=0 m=1
-
-XM4 net1 vx vdd vdd pfet_03v3 L=2u W=50u nf=50 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-
-+ sa=0 sb=0 sd=0 m=1
-
-
-*****Tail current NMOS 
-
-XM5 vtail vbias_tail vss vss nfet_03v3 L=1u W=60u nf=60 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-
-+ sa=0 sb=0 sd=0 m=1
-
-*****Current Mirror NMOS 
-
-XM6 vbias_tail vbias_tail vss vss nfet_03v3 L=1u W=20u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-
-+ sa=0 sb=0 sd=0 m=1
-
-*****Current Reference PMOS
-
-XM7 vbias_tail vp vdd vdd pfet_03v3 L=2u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-
-+ sa=0 sb=0 sd=0 m=1
-
-
-*****Second stage Amplifier 
-
-****(multiplicity doesnot work in the model. Multiple NMOS cells (for m=7 and W/L= 100u/1u) should be written manually)
-
-XM8 vout vbias_tail vss vss nfet_03v3 L=1u W=100u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-
-+ sa=0 sb=0 sd=0 m=7
-
-****(multiplicity doesnot work in the model. Multiple PMOS cells (for m=4 and W/L= 100u/0.7u) should be written manually)
-
-XM10 vout net1 vdd vdd pfet_03v3 L=0.7u W=100u nf=5 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
-
-+ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
-
-+ sa=0 sb=0 sd=0 m=4
-
-*****Load Cap
-*C1 vout GND 1p m=1
-
-*****Miller Compensation cap
-
-XC1 net2 vout cap_mim_2f0_m4m5_noshield c_width=40e-6 c_length=40e-6 m=1
-
-
-XR1 net1 net2 vss npolyf_u r_width=4e-6 r_length=2.3e-6 m=1
-
-
-
+** Library name: low_noise_opamp
+** Cell name: opamp2_nodw
+** View name: schematic
+xmp13<2> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp13<1> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp13<0> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp14<1> vout net1 vdd vdd pfet_03v3 w=75e-6 l=300e-9 nf=1 as=33e-12 ad=33e-12 ps=150.88e-6 pd=150.88e-6 nrd=5.867e-3 nrs=5.867e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp14<2> vout net1 vdd vdd pfet_03v3 w=75e-6 l=300e-9 nf=1 as=33e-12 ad=33e-12 ps=150.88e-6 pd=150.88e-6 nrd=5.867e-3 nrs=5.867e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp22<3> net14 vin2 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp22<2> net14 vin2 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp22<1> net14 vin2 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp22<0> net14 vin2 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp21<3> net13 vin1 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp21<2> net13 vin1 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp21<1> net13 vin1 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp21<0> net13 vin1 vtailp vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn26<2> vdd vdd vdd vdd pfet_03v3 w=50e-6 l=300e-9 nf=1 as=22e-12 ad=22e-12 ps=100.88e-6 pd=100.88e-6 nrd=8.8e-3 nrs=8.8e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn26<1> vdd vdd vdd vdd pfet_03v3 w=50e-6 l=300e-9 nf=1 as=22e-12 ad=22e-12 ps=100.88e-6 pd=100.88e-6 nrd=8.8e-3 nrs=8.8e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn26<0> vdd vdd vdd vdd pfet_03v3 w=50e-6 l=300e-9 nf=1 as=22e-12 ad=22e-12 ps=100.88e-6 pd=100.88e-6 nrd=8.8e-3 nrs=8.8e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp30 net17 net17 vdd vdd pfet_03v3 w=2e-6 l=3e-6 nf=1 as=880e-15 ad=880e-15 ps=4.88e-6 pd=4.88e-6 nrd=220e-3 nrs=220e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp29 net16 net15 vdd vdd pfet_03v3 w=2e-6 l=3e-6 nf=1 as=880e-15 ad=880e-15 ps=4.88e-6 pd=4.88e-6 nrd=220e-3 nrs=220e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp28 net15 net15 vdd vdd pfet_03v3 w=2e-6 l=3e-6 nf=1 as=880e-15 ad=880e-15 ps=4.88e-6 pd=4.88e-6 nrd=220e-3 nrs=220e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp27 vtailp net15 vdd vdd pfet_03v3 w=100e-6 l=3e-6 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp26 net8 vprog vdd vdd pfet_03v3 w=2e-6 l=3e-6 nf=1 as=880e-15 ad=880e-15 ps=4.88e-6 pd=4.88e-6 nrd=220e-3 nrs=220e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp25 iabp iabp net17 vdd pfet_03v3 w=10e-6 l=1e-6 nf=1 as=4.4e-12 ad=4.4e-12 ps=20.88e-6 pd=20.88e-6 nrd=44e-3 nrs=44e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp24 iabn net11 net16 vdd pfet_03v3 w=10e-6 l=1e-6 nf=1 as=4.4e-12 ad=4.4e-12 ps=20.88e-6 pd=20.88e-6 nrd=44e-3 nrs=44e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp23 net11 net11 net15 vdd pfet_03v3 w=10e-6 l=1e-6 nf=1 as=4.4e-12 ad=4.4e-12 ps=20.88e-6 pd=20.88e-6 nrd=44e-3 nrs=44e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp20 net6 iabp net1 vdd pfet_03v3 w=10e-6 l=1e-6 nf=1 as=4.4e-12 ad=4.4e-12 ps=20.88e-6 pd=20.88e-6 nrd=44e-3 nrs=44e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp19 net3 vbiasp net5 vdd pfet_03v3 w=40e-6 l=3e-6 nf=1 as=17.6e-12 ad=17.6e-12 ps=80.88e-6 pd=80.88e-6 nrd=11e-3 nrs=11e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp18 net1 vbiasp net4 vdd pfet_03v3 w=40e-6 l=3e-6 nf=1 as=17.6e-12 ad=17.6e-12 ps=80.88e-6 pd=80.88e-6 nrd=11e-3 nrs=11e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp17 net5 net3 vdd vdd pfet_03v3 w=100e-6 l=3e-6 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp16 net4 net3 vdd vdd pfet_03v3 w=100e-6 l=3e-6 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmp15 net2 iabp net3 vdd pfet_03v3 w=10e-6 l=1e-6 nf=1 as=4.4e-12 ad=4.4e-12 ps=20.88e-6 pd=20.88e-6 nrd=44e-3 nrs=44e-3 sa=440e-9 sb=440e-9 sd=520e-9 dtemp=0 m=1 par=1
+xmn24 vdd vdd vdd vdd pfet_03v3 w=45e-6 l=1e-6 nf=1 as=19.8e-12 ad=19.8e-12 ps=90.88e-6 pd=90.88e-6 nrd=9.778e-3 nrs=9.778e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn23 vdd vdd vdd vdd pfet_03v3 w=44e-6 l=3e-6 nf=1 as=19.36e-12 ad=19.36e-12 ps=88.88e-6 pd=88.88e-6 nrd=10e-3 nrs=10e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xc4<0> net1 vout cap_mim_2f0_m4m5_noshield c_length=25e-6 c_width=25e-6 m=4
+xc5<0> net6 vout cap_mim_2f0_m4m5_noshield c_length=25e-6 c_width=25e-6 m=4
+xmn25<4> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn25<3> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn25<2> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn25<1> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn25<0> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn43<3> net4 vin2 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn43<2> net4 vin2 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn43<1> net4 vin2 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn43<0> net4 vin2 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn42<3> net5 vin1 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn42<2> net5 vin1 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn42<1> net5 vin1 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn42<0> net5 vin1 vtailn vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn44 net1 iabn net6 vss nfet_03v3 w=10e-6 l=1e-6 nf=1 as=4.4e-12 ad=4.4e-12 ps=20.88e-6 pd=20.88e-6 nrd=44e-3 nrs=44e-3 sa=440e-9 sb=440e-9 sd=520e-9 dtemp=0 m=1 par=1
+xmn41 net3 iabn net2 vss nfet_03v3 w=10e-6 l=1e-6 nf=1 as=4.4e-12 ad=4.4e-12 ps=20.88e-6 pd=20.88e-6 nrd=44e-3 nrs=44e-3 sa=440e-9 sb=440e-9 sd=520e-9 dtemp=0 m=1 par=1
+xmn40 vout net6 vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=520e-9 dtemp=0 m=1 par=1
+xmn39 net6 vbiasn net14 vss nfet_03v3 w=20e-6 l=1e-6 nf=1 as=8.8e-12 ad=8.8e-12 ps=40.88e-6 pd=40.88e-6 nrd=22e-3 nrs=22e-3 sa=440e-9 sb=440e-9 sd=520e-9 dtemp=0 m=1 par=1
+xmn38 net2 vbiasn net13 vss nfet_03v3 w=20e-6 l=1e-6 nf=1 as=8.8e-12 ad=8.8e-12 ps=40.88e-6 pd=40.88e-6 nrd=22e-3 nrs=22e-3 sa=440e-9 sb=440e-9 sd=520e-9 dtemp=0 m=1 par=1
+xmn37 net14 net2 vss vss nfet_03v3 w=20e-6 l=1e-6 nf=1 as=8.8e-12 ad=8.8e-12 ps=40.88e-6 pd=40.88e-6 nrd=22e-3 nrs=22e-3 sa=440e-9 sb=440e-9 sd=520e-9 dtemp=0 m=1 par=1
+xmn36 net13 net2 vss vss nfet_03v3 w=20e-6 l=1e-6 nf=1 as=8.8e-12 ad=8.8e-12 ps=40.88e-6 pd=40.88e-6 nrd=22e-3 nrs=22e-3 sa=440e-9 sb=440e-9 sd=520e-9 dtemp=0 m=1 par=1
+xmn35 net10 net12 vss vss nfet_03v3 w=2e-6 l=1e-6 nf=1 as=880e-15 ad=880e-15 ps=4.88e-6 pd=4.88e-6 nrd=220e-3 nrs=220e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn34 vtailn net12 vss vss nfet_03v3 w=100e-6 l=1e-6 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn33 net12 net12 vss vss nfet_03v3 w=20e-6 l=1e-6 nf=1 as=8.8e-12 ad=8.8e-12 ps=40.88e-6 pd=40.88e-6 nrd=22e-3 nrs=22e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn32 net9 net9 vss vss nfet_03v3 w=2e-6 l=1e-6 nf=1 as=880e-15 ad=880e-15 ps=4.88e-6 pd=4.88e-6 nrd=220e-3 nrs=220e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn31 net7 net12 vss vss nfet_03v3 w=2e-6 l=1e-6 nf=1 as=880e-15 ad=880e-15 ps=4.88e-6 pd=4.88e-6 nrd=220e-3 nrs=220e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn30 net8 net8 net12 vss nfet_03v3 w=20e-6 l=1e-6 nf=1 as=8.8e-12 ad=8.8e-12 ps=40.88e-6 pd=40.88e-6 nrd=22e-3 nrs=22e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn29 net11 net8 net10 vss nfet_03v3 w=220e-9 l=1e-6 nf=1 as=151.6e-15 ad=151.6e-15 ps=1.64e-6 pd=1.64e-6 nrd=3.132231 nrs=3.132231 sa=460e-9 sb=460e-9 sd=0 dtemp=0 m=1 par=1
+xmn28 iabn iabn net9 vss nfet_03v3 w=10e-6 l=1e-6 nf=1 as=4.4e-12 ad=4.4e-12 ps=20.88e-6 pd=20.88e-6 nrd=44e-3 nrs=44e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn27 iabp net8 net7 vss nfet_03v3 w=10e-6 l=1e-6 nf=1 as=4.4e-12 ad=4.4e-12 ps=20.88e-6 pd=20.88e-6 nrd=44e-3 nrs=44e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
+xmn22 vss vss vss vss nfet_03v3 w=9e-6 l=1e-6 nf=1 as=3.96e-12 ad=3.96e-12 ps=18.88e-6 pd=18.88e-6 nrd=48.889e-3 nrs=48.889e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1

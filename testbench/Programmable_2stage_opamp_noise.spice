@@ -12,9 +12,11 @@
 
 V1 vdd GND 3.3
 V2 vss GND 0
-V3 vin1 GND dc 1.4
-V4 vin2 GND dc 1.4 
-V5 vp GND dc 0
+V3 vin1 GND dc 0.8 ac 1
+V4 vin2 GND dc 0.8 ac 0 
+V5 vprog GND dc 0
+V6 vbiasp GND dc 0.9
+V7 vbiasn GND dc 1
 
 
 
@@ -27,9 +29,9 @@ V5 vp GND dc 0
 
 .control
 
-let begin = 1.2
+let begin = 0
 let step = 0.1
-let final = 1.2
+let final = 2.5
 let test = begin
 let cnt = 0
 let ind = ((final-begin)/step)
@@ -88,7 +90,7 @@ plot n vs power xlabel Power(mW) ylabel Integrated_Noise(uV) title 'OTA_2stage I
 hardcopy ../output/Noise.svg $inoise xlabel  Frequency(Hz) ylabel Integrated_Noise(uV) title 'OTA_2stage Integrated_Noise'
 hardcopy ../output/Noise_vs_Power.svg n vs power xlabel Power(mW) ylabel Integrated_Noise(uV) title 'OTA_2stage Integrated_Noise_vs_Power'
 
-
+print n
 
 .endc
 

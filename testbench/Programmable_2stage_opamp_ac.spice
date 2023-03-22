@@ -9,12 +9,16 @@
 .param  sw_stat_global = 0
 
 .include ../netlist/Programmable_2stage_opamp.spice
+*X1 vbiasn vbiasp vdd vin1 vin2 vout vp vss opamp2
+
 
 V1 vdd GND 3.3
 V2 vss GND 0
-V3 vin1 GND dc 1.4 ac 1
-V4 vin2 GND dc 1.4 ac 0 
-V5 vp GND dc 0
+V3 vin1 GND dc 0.8 ac 1
+V4 vin2 GND dc 0.8 ac 0 
+V5 vprog GND dc 0
+V6 vbiasp GND dc 0.9
+V7 vbiasn GND dc 1
 
 
 
@@ -27,7 +31,7 @@ V5 vp GND dc 0
 
 .control
 
-let begin = 0
+let begin = 2
 let step = 0.1
 let final = 2
 let test = begin
@@ -113,6 +117,8 @@ hardcopy ../output/Phase.svg $phasedeg xlabel Frequency(Hz) ylabel Phase(deg) ti
 hardcopy ../output/Gain_vs_Power.svg dc_gains vs power xlabel Power(mW) ylabel Gain(db) title 'OTA_2stage_Gain_vs_Power'
 hardcopy ../output/GBW_vs_Power.svg bandwidths vs power xlabel Power(mW) ylabel Frequency(Hz) title 'OTA_2stage_GBW_vs_Power'
 hardcopy ../output/PM_vs_Power.svg phase_margins vs power xlabel Power(mW) ylabel Phase_margin title 'OTA_2stage_PM_vs_Power'
+
+print power
 
 .endc
 
