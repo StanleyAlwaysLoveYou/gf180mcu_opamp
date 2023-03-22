@@ -2,6 +2,7 @@
 ** Library name: low_noise_opamp
 ** Cell name: opamp2_nodw
 ** View name: schematic
+xmp3 vout_t vss vout vdd pfet_03v3 w=24e-6 l=280e-9 nf=12
 xmp13<2> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
 xmp13<1> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
 xmp13<0> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 
@@ -36,6 +37,7 @@ xmn24 vdd vdd vdd vdd pfet_03v3 w=45e-6 l=1e-6 nf=1
 xmn23 vdd vdd vdd vdd pfet_03v3 w=44e-6 l=3e-6 nf=1 
 xc4<0> net1 vout cap_mim_2f0_m4m5_noshield c_length=25e-6 c_width=25e-6 m=4
 xc5<0> net6 vout cap_mim_2f0_m4m5_noshield c_length=25e-6 c_width=25e-6 m=4
+xmn3 vout_t vdd vout vss nfet_03v3 w=12e-6 l=280e-9 nf=12
 xmn25<4> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
 xmn25<3> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
 xmn25<2> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 
