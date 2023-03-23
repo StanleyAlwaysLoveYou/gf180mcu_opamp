@@ -19,110 +19,78 @@ Integrated_Noise(uV)
 <text stroke="none" fill="black" font-size="16" x="10" y="16">
 noise1: OTA_2stage Integrated_Noise_vs_Power
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="60" y="728">
-5.0
+<path stroke="black" stroke-dasharray="1,2" d="M85 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="65" y="728">
+1.55
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M139 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="124" y="728">
-5.1
+<path stroke="black" stroke-dasharray="1,2" d="M210 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="190" y="728">
+1.60
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M203 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="188" y="728">
-5.2
+<path stroke="black" stroke-dasharray="1,2" d="M335 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="315" y="728">
+1.65
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M267 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="252" y="728">
-5.3
+<path stroke="black" stroke-dasharray="1,2" d="M460 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="440" y="728">
+1.70
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M331 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="316" y="728">
-5.4
+<path stroke="black" stroke-dasharray="1,2" d="M585 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="565" y="728">
+1.75
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M395 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="380" y="728">
-5.5
+<path stroke="black" stroke-dasharray="1,2" d="M710 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="690" y="728">
+1.80
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M459 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="444" y="728">
-5.6
+<path stroke="black" stroke-dasharray="1,2" d="M835 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="815" y="728">
+1.85
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M523 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="508" y="728">
-5.7
-</text>
-<path stroke="black" stroke-dasharray="1,2" d="M587 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="572" y="728">
-5.8
-</text>
-<path stroke="black" stroke-dasharray="1,2" d="M651 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="636" y="728">
-5.9
-</text>
-<path stroke="black" stroke-dasharray="1,2" d="M715 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="700" y="728">
-6.0
-</text>
-<path stroke="black" stroke-dasharray="1,2" d="M779 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="764" y="728">
-6.1
-</text>
-<path stroke="black" stroke-dasharray="1,2" d="M843 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="828" y="728">
-6.2
-</text>
-<path stroke="black" stroke-dasharray="1,2" d="M907 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="892" y="728">
-6.3
-</text>
-<path stroke="black" stroke-dasharray="1,2" d="M971 704l0 -639"/>
-<text stroke="none" fill="black" font-size="16" x="956" y="728">
-6.4
+<path stroke="black" stroke-dasharray="1,2" d="M960 704l0 -640"/>
+<text stroke="none" fill="black" font-size="16" x="940" y="728">
+1.90
 </text>
 <text stroke="none" fill="black" font-size="16" x="614" y="752">
-m     
+     
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 704l896 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 704l875 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="712">
-6.4
+3.10
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 633l896 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="641">
-6.6
+<path stroke="black" stroke-dasharray="1,2" d="M85 624l875 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="632">
+3.20
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 562l896 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="570">
-6.8
+<path stroke="black" stroke-dasharray="1,2" d="M85 544l875 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="552">
+3.30
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 491l896 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="499">
-7.0
+<path stroke="black" stroke-dasharray="1,2" d="M85 464l875 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="472">
+3.40
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 420l896 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="428">
-7.2
+<path stroke="black" stroke-dasharray="1,2" d="M85 384l875 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="392">
+3.50
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 349l896 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="357">
-7.4
+<path stroke="black" stroke-dasharray="1,2" d="M85 304l875 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="312">
+3.60
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 278l896 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="286">
-7.6
+<path stroke="black" stroke-dasharray="1,2" d="M85 224l875 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="232">
+3.70
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 207l896 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="215">
-7.8
+<path stroke="black" stroke-dasharray="1,2" d="M85 144l875 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="152">
+3.80
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 136l896 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="144">
-8.0
-</text>
-<path stroke="black" stroke-dasharray="1,2" d="M75 65l896 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="73">
-8.2
+<path stroke="black" stroke-dasharray="1,2" d="M85 64l875 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="72">
+3.90
 </text>
 <text stroke="none" fill="black" font-size="16" x="10" y="32">
-u     
+     
 </text>
 </svg>

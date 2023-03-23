@@ -3,12 +3,13 @@
 .lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
 .lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
 .lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /home/stanleylin/silicon-env/share/pdk/gf180mcuC/libs.tech/ngspice/sm141064.ngspice diode_typical
 
 
 .param  sw_stat_mismatch = 0
 .param  sw_stat_global = 0
 
-.include ../netlist/Programmable_2stage_opamp_wo_res_pex.spice
+.include ../netlist/Programmable_2stage_opamp_pex.spice
 X1 vout vout_t vbiasp vbiasn vin2 vin1 vprog vss vdd opamp2
 
 V1 vdd GND 3.3
