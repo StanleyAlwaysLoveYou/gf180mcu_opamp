@@ -17,7 +17,7 @@ Frequency(Hz)
 Integrated_Noise(uV)
 </text>
 <text stroke="none" fill="black" font-size="16" x="10" y="16">
-noise73: OTA_2stage Integrated_Noise
+noise1: OTA_2stage Integrated_Noise
 </text>
 <path stroke="black" d="M85 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="65" y="728">
@@ -44,195 +44,54 @@ noise73: OTA_2stage Integrated_Noise
 <text stroke="none" fill="black" font-size="16" x="614" y="752">
 Hz
 </text>
-<path stroke="black" d="M85 704l879 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M85 704l879 0"/>
 <text stroke="none" fill="black" font-size="16" x="53" y="712">
-0.0
+4.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M85 624l879 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="632">
-10.0
+<path stroke="black" stroke-dasharray="1,2" d="M85 640l879 0"/>
+<text stroke="none" fill="black" font-size="16" x="53" y="648">
+5.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M85 544l879 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="552">
-20.0
+<path stroke="black" stroke-dasharray="1,2" d="M85 576l879 0"/>
+<text stroke="none" fill="black" font-size="16" x="53" y="584">
+6.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M85 464l879 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="472">
-30.0
+<path stroke="black" stroke-dasharray="1,2" d="M85 512l879 0"/>
+<text stroke="none" fill="black" font-size="16" x="53" y="520">
+7.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 448l879 0"/>
+<text stroke="none" fill="black" font-size="16" x="53" y="456">
+8.0
 </text>
 <path stroke="black" stroke-dasharray="1,2" d="M85 384l879 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="392">
-40.0
+<text stroke="none" fill="black" font-size="16" x="53" y="392">
+9.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M85 304l879 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="312">
-50.0
+<path stroke="black" stroke-dasharray="1,2" d="M85 320l879 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="328">
+10.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M85 224l879 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="232">
-60.0
+<path stroke="black" stroke-dasharray="1,2" d="M85 256l879 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="264">
+11.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M85 144l879 0"/>
-<text stroke="none" fill="black" font-size="16" x="43" y="152">
-70.0
+<path stroke="black" stroke-dasharray="1,2" d="M85 192l879 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="200">
+12.0
+</text>
+<path stroke="black" stroke-dasharray="1,2" d="M85 128l879 0"/>
+<text stroke="none" fill="black" font-size="16" x="43" y="136">
+13.0
 </text>
 <path stroke="black" stroke-dasharray="1,2" d="M85 64l879 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="72">
-80.0
+14.0
 </text>
 <text stroke="none" fill="black" font-size="16" x="10" y="32">
 nV/sqrt(Hz)
 </text>
-<path stroke="red" d="M439 23l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="32">
-(noise25.inoise_spectrum)
-</text>
-<path stroke="red" d="M173 613l15 5 3 0 12 4 2 1 3 1 3 0 12 4 3 0 9 3 3 0 6 2 2 0 9 3 3 0 6 2 3 0 6 2 3 0 3 1 3 0 3 1 2 1 3 0 3 1 3 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 5 0 3 1 3 0 3 1"/>
-<path stroke="red" d="M384 659l6 0 3 1 6 0 3 1 3 0 3 1 5 0 3 1 6 0 3 1 9 0 3 1 6 0 3 1 6 0 2 1 9 0 3 1 9 0 3 1 9 0 3 1 11 0 3 1 9 0 3 1 15 0 3 1 11 0 3 1 15 0 3 1 17 0 3 1 21 0 3 1 23 0 3 1 32 0 3 1 38 0 3 1 47 0"/>
-<path stroke="blue" d="M85 23l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="32">
-(noise27.inoise_spectrum)
-</text>
-<path stroke="blue" d="M173 613l24 8 3 0 3 1 2 1 6 2 3 0 12 4 3 0 9 3 3 0 3 1 2 1 3 0 6 2 3 0 6 2 3 0 6 2 3 0 6 2 3 0 2 1 3 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 5 0 3 1 3 0 3 1"/>
-<path stroke="blue" d="M384 659l6 0 3 1 6 0 3 1 3 0 3 1 5 0 3 1 9 0 3 1 6 0 3 1 6 0 3 1 8 0 3 1 9 0 3 1 9 0 3 1 9 0 3 1 8 0 3 1 12 0 3 1 15 0 3 1 14 0 3 1 15 0 3 1 17 0 3 1 24 0 3 1 26 0 3 1 32 0 3 1 47 0 3 1 26 0"/>
-<path stroke="#FFA500" d="M439 39l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="48">
-(noise29.inoise_spectrum)
-</text>
-<path stroke="#FFA500" d="M173 614l3 0 24 8 3 0 2 1 9 3 3 0 12 4 3 0 6 2 3 0 3 1 2 1 3 1 3 0 6 2 3 0 3 1 3 0 6 2 3 0 6 2 3 0 2 1 3 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 5 0 3 1 6 0"/>
-<path stroke="#FFA500" d="M384 658l3 1 3 0 3 1 6 0 3 1 6 0 3 1 5 0 3 1 6 0 3 1 6 0 3 1 9 0 3 1 8 0 3 1 6 0 3 1 12 0 3 1 9 0 3 1 11 0 3 1 12 0 3 1 12 0 2 1 18 0 3 1 15 0 3 1 20 0 3 1 23 0 3 1 33 0 3 1 38 0 3 1 55 0"/>
-<path stroke="green" d="M85 39l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="48">
-(noise31.inoise_spectrum)
-</text>
-<path stroke="green" d="M173 614l3 0 24 8 3 0 2 1 9 3 3 0 9 3 3 0 9 3 3 0 3 1 2 1 3 0 6 2 3 0 6 2 3 0 6 2 3 0 3 1 3 0 3 1 2 1 3 0 3 1 3 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 2 1 3 0 3 1 6 0"/>
-<path stroke="green" d="M384 658l3 1 6 0 3 1 6 0 3 1 6 0 2 1 6 0 3 1 6 0 3 1 6 0 3 1 9 0 3 1 8 0 3 1 9 0 3 1 9 0 3 1 11 0 3 1 12 0 3 1 12 0 3 1 14 0 3 1 15 0 3 1 20 0 3 1 21 0 3 1 29 0 3 1 35 0 3 1 50 0 3 1 23 0"/>
-<path stroke="#FFC0C5" d="M439 55l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="64">
-(noise33.inoise_spectrum)
-</text>
-<path stroke="#FFC0C5" d="M173 613l21 7 3 0 6 2 2 1 3 1 3 0 12 4 3 0 9 3 3 0 6 2 2 0 6 2 3 0 6 2 3 0 6 2 3 0 6 2 3 0 3 1 2 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 2 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 5 0 3 1 6 0 3 1 3 0"/>
-<path stroke="#FFC0C5" d="M387 658l3 1 6 0 3 1 6 0 3 1 5 0 3 1 6 0 3 1 9 0 3 1 6 0 3 1 8 0 3 1 9 0 3 1 9 0 3 1 9 0 3 1 11 0 3 1 12 0 3 1 15 0 2 1 15 0 3 1 21 0 2 1 21 0 3 1 26 0 3 1 32 0 3 1 47 0 3 1 41 0"/>
-<path stroke="#A52A2A" d="M85 55l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="64">
-(noise35.inoise_spectrum)
-</text>
-<path stroke="#A52A2A" d="M173 612l24 8 3 0 3 1 2 1 6 2 3 0 12 4 3 0 9 3 3 0 3 1 2 1 3 0 6 2 3 0 6 2 3 0 6 2 3 0 3 1 3 0 3 1 2 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 6 2 3 0 3 1 5 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 2 1 6 0 3 1 6 0"/>
-<path stroke="#A52A2A" d="M387 657l3 1 3 0 3 1 6 0 3 1 6 0 2 1 6 0 3 1 9 0 3 1 6 0 3 1 9 0 2 1 9 0 3 1 9 0 3 1 9 0 3 1 11 0 3 1 12 0 3 1 15 0 3 1 14 0 3 1 18 0 3 1 20 0 3 1 26 0 3 1 33 0 3 1 43 0 3 1 50 0"/>
-<path stroke="#F0E68C" d="M439 71l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="80">
-(noise37.inoise_spectrum)
-</text>
-<path stroke="#F0E68C" d="M173 611l6 2 3 0 21 7 2 0 15 5 3 0 9 3 3 0 9 3 2 0 6 2 3 0 6 2 3 0 6 2 3 0 3 1 3 0 6 2 2 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 2 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 5 0 3 1 3 0 3 1 6 0 3 1 6 0"/>
-<path stroke="#F0E68C" d="M396 657l3 1 3 0 3 1 6 0 2 1 9 0 3 1 6 0 3 1 6 0 3 1 9 0 2 1 9 0 3 1 9 0 3 1 9 0 3 1 11 0 3 1 12 0 3 1 15 0 3 1 14 0 3 1 21 0 3 1 20 0 3 1 26 0 3 1 33 0 2 1 47 0 3 1 44 0"/>
-<path stroke="#DDA0DD" d="M85 71l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="80">
-(noise39.inoise_spectrum)
-</text>
-<path stroke="#DDA0DD" d="M173 608l18 6 3 0 9 3 2 1 9 3 3 0 12 4 3 0 9 3 3 0 2 1 3 1 3 0 9 3 3 0 3 1 3 0 6 2 3 0 6 2 2 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 2 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 2 1 3 0 3 1 6 0 3 1"/>
-<path stroke="#DDA0DD" d="M387 655l6 0 3 1 3 0 3 1 6 0 3 1 5 0 3 1 6 0 3 1 9 0 3 1 6 0 3 1 8 0 3 1 9 0 3 1 9 0 3 1 12 0 2 1 9 0 3 1 15 0 3 1 14 0 3 1 15 0 3 1 20 0 3 1 21 0 3 1 29 0 3 1 38 0 3 1 64 0 3 1 9 0"/>
-<path stroke="#DA70D6" d="M439 87l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="96">
-(noise41.inoise_spectrum)
-</text>
-<path stroke="#DA70D6" d="M173 604l30 10 2 1 3 0 18 6 3 0 12 4 3 0 2 1 3 1 3 0 9 3 3 0 6 2 3 0 6 2 3 0 3 1 2 1 3 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 3 0 2 1 6 0 3 1 3 0 3 1 6 0 3 1"/>
-<path stroke="#DA70D6" d="M396 654l6 0 3 1 3 0 3 1 5 0 3 1 6 0 3 1 9 0 3 1 6 0 3 1 8 0 3 1 6 0 3 1 9 0 3 1 12 0 3 1 11 0 3 1 12 0 3 1 12 0 2 1 15 0 3 1 18 0 3 1 23 0 3 1 23 0 3 1 35 0 3 1 50 0 3 1 38 0"/>
-<path stroke="#EE82EE" d="M85 87l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="96">
-(noise43.inoise_spectrum)
-</text>
-<path stroke="#EE82EE" d="M173 600l30 10 2 1 3 0 21 7 3 0 12 4 2 0 9 3 3 0 9 3 3 0 6 2 3 0 6 2 2 0 6 2 3 0 6 2 3 0 3 1 3 0 3 1 3 0 6 2 3 0 2 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 5 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 6 0 3 1 5 0"/>
-<path stroke="#EE82EE" d="M413 653l3 1 3 0 3 1 9 0 3 1 6 0 3 1 6 0 3 1 8 0 3 1 6 0 3 1 9 0 3 1 12 0 2 1 9 0 3 1 12 0 3 1 14 0 3 1 15 0 3 1 15 0 3 1 20 0 3 1 26 0 3 1 33 0 2 1 50 0 3 1 41 0"/>
-<path stroke="#B03060" d="M439 103l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="112">
-(noise45.inoise_spectrum)
-</text>
-<path stroke="#B03060" d="M173 595l30 10 2 1 24 8 3 0 12 4 2 1 3 0 12 4 3 0 9 3 3 0 6 2 3 0 2 1 3 1 3 0 6 2 3 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 2 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 6 0"/>
-<path stroke="#B03060" d="M411 650l2 1 3 0 3 1 6 0 3 1 6 0 3 1 6 0 3 1 8 0 3 1 6 0 3 1 9 0 3 1 9 0 3 1 8 0 3 1 12 0 3 1 12 0 3 1 11 0 3 1 15 0 3 1 17 0 3 1 21 0 3 1 26 0 3 1 32 0 3 1 59 0 3 1 26 0"/>
-<path stroke="#40E0D0" d="M85 103l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="112">
-(noise47.inoise_spectrum)
-</text>
-<path stroke="#40E0D0" d="M173 590l3 2 27 9 2 1 30 10 3 0 6 2 2 1 6 2 3 0 12 4 3 0 6 2 3 0 6 2 2 1 3 0 6 2 3 0 6 2 3 0 3 1 3 0 6 2 3 0 3 1 2 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1"/>
-<path stroke="#40E0D0" d="M411 648l5 0 3 1 3 0 3 1 6 0 3 1 6 0 3 1 6 0 3 1 8 0 3 1 6 0 3 1 9 0 3 1 9 0 3 1 8 0 3 1 12 0 3 1 12 0 3 1 14 0 3 1 15 0 3 1 17 0 3 1 24 0 3 1 26 0 3 1 41 0 3 1 67 0"/>
-<path stroke="#A0522D" d="M439 119l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="128">
-(noise49.inoise_spectrum)
-</text>
-<path stroke="#A0522D" d="M173 586l3 1 3 2 24 8 2 1 39 13 2 0 15 5 3 0 9 3 3 0 9 3 2 0 6 2 3 0 6 2 3 0 6 2 3 0 6 2 3 0 3 1 2 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 5 0 3 1 6 0 3 1"/>
-<path stroke="#A0522D" d="M425 647l3 0 3 1 6 0 3 1 6 0 3 1 8 0 3 1 6 0 3 1 9 0 3 1 9 0 3 1 8 0 3 1 9 0 3 1 12 0 3 1 11 0 3 1 15 0 3 1 17 0 3 1 21 0 3 1 26 0 3 1 35 0 3 1 85 0"/>
-<path stroke="#FF7F50" d="M85 119l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="128">
-(noise51.inoise_spectrum)
-</text>
-<path stroke="#FF7F50" d="M173 582l3 1 3 2 21 7 3 2 2 1 24 8 3 0 12 4 2 1 9 3 3 0 12 4 3 0 9 3 3 0 2 1 6 2 3 0 6 2 3 0 6 2 3 0 6 2 3 0 3 1 2 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1"/>
-<path stroke="#FF7F50" d="M408 642l5 0 3 1 3 0 3 1 6 0 3 1 6 0 3 1 6 0 3 1 5 0 3 1 9 0 3 1 6 0 3 1 9 0 3 1 8 0 3 1 12 0 3 1 9 0 3 1 14 0 3 1 15 0 3 1 15 0 2 1 21 0 3 1 26 0 3 1 38 0 3 1 85 0"/>
-<path stroke="cyan" d="M439 135l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="144">
-(noise53.inoise_spectrum)
-</text>
-<path stroke="cyan" d="M173 579l15 5 3 2 12 4 2 1 39 13 2 1 3 0 15 5 3 0 12 4 3 0 3 1 2 1 3 1 3 0 6 2 3 0 6 2 3 0 6 2 3 0 6 2 2 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 5 0 3 1 6 0"/>
-<path stroke="cyan" d="M422 640l3 1 6 0 3 1 3 0 3 1 9 0 3 1 5 0 3 1 6 0 3 1 9 0 3 1 9 0 3 1 8 0 3 1 12 0 3 1 12 0 3 1 11 0 3 1 18 0 3 1 17 0 3 1 24 0 3 1 29 0 3 1 56 0 2 1 53 0"/>
-<path stroke="magenta" d="M85 135l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="144">
-(noise55.inoise_spectrum)
-</text>
-<path stroke="magenta" d="M173 575l9 3 3 2 18 6 2 1 6 2 3 2 15 5 3 0 12 4 2 1 12 4 3 0 12 4 3 0 9 3 2 0 9 3 3 0 6 2 3 0 6 2 3 0 3 1 3 0 3 1 2 1 3 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 2 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 6 0"/>
-<path stroke="magenta" d="M411 635l2 1 6 0 3 1 3 0 3 1 6 0 3 1 6 0 3 1 8 0 3 1 6 0 3 1 9 0 3 1 9 0 3 1 8 0 3 1 9 0 3 1 15 0 3 1 11 0 3 1 18 0 3 1 17 0 3 1 24 0 3 1 35 0 3 1 108 0"/>
-<path stroke="#666" d="M439 151l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="160">
-(noise57.inoise_spectrum)
-</text>
-<path stroke="#666" d="M173 571l9 3 3 2 18 6 2 1 3 2 27 9 3 0 6 2 2 1 12 4 3 0 12 4 3 0 9 3 2 0 9 3 3 0 6 2 3 0 6 2 3 0 6 2 3 0 2 1 3 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 2 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 2 1 6 0 3 1"/>
-<path stroke="#666" d="M422 633l6 0 3 1 6 0 3 1 6 0 3 1 8 0 3 1 6 0 3 1 9 0 3 1 12 0 3 1 8 0 3 1 12 0 3 1 15 0 2 1 15 0 3 1 21 0 2 1 24 0 3 1 38 0 3 1 111 0"/>
-<path stroke="#949494" d="M85 151l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="160">
-(noise59.inoise_spectrum)
-</text>
-<path stroke="#949494" d="M173 566l3 2 15 5 3 2 9 3 2 1 39 13 2 1 3 0 15 5 3 0 12 4 3 0 3 1 2 1 3 1 3 0 6 2 3 0 6 2 3 0 3 1 3 0 6 2 3 0 2 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 2 1 3 0 3 1 6 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 5 0 3 1"/>
-<path stroke="#949494" d="M416 627l6 0 3 1 6 0 3 1 6 0 3 1 9 0 2 1 6 0 3 1 9 0 3 1 12 0 3 1 8 0 3 1 15 0 3 1 12 0 3 1 17 0 3 1 21 0 3 1 29 0 3 1 55 0 3 1 59 0 3 -1 29 0"/>
-<path stroke="#888" d="M439 167l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="176">
-(noise61.inoise_spectrum)
-</text>
-<path stroke="#888" d="M173 561l6 2 3 2 21 7 2 1 3 2 18 6 3 0 15 5 2 1 6 2 3 0 12 4 3 0 9 3 3 0 3 1 2 1 3 1 3 0 6 2 3 0 6 2 3 0 3 1 3 0 6 2 3 0 2 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 6 0 3 1 3 0 3 1 6 0 3 1 6 0 3 1"/>
-<path stroke="#888" d="M408 619l3 0 2 1 6 0 3 1 9 0 3 1 6 0 3 1 9 0 2 1 9 0 3 1 9 0 3 1 12 0 3 1 11 0 3 1 15 0 3 1 17 0 3 1 21 0 3 1 32 0 3 1 149 0 3 -1 3 0"/>
-<path stroke="red" d="M85 167l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="176">
-(noise63.inoise_spectrum)
-</text>
-<path stroke="red" d="M173 554l9 3 3 2 18 6 2 1 36 12 3 0 2 1 12 4 3 0 9 3 3 0 9 3 3 0 2 1 3 1 3 0 3 1 3 0 6 2 3 0 6 2 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 5 0 3 1 3 0 3 1 6 0 3 1 6 0 3 1 6 0 3 1 5 0 3 1 6 0"/>
-<path stroke="red" d="M422 611l3 1 9 0 3 1 9 0 3 1 8 0 3 1 9 0 3 1 12 0 3 1 14 0 3 1 18 0 3 1 20 0 3 1 30 0 2 1 147 0 3 -1 29 0"/>
-<path stroke="blue" d="M439 183l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="192">
-(noise65.inoise_spectrum)
-</text>
-<path stroke="blue" d="M173 544l6 2 3 2 21 7 2 1 24 8 3 0 12 4 2 1 3 0 9 3 3 0 9 3 3 0 6 2 3 0 3 1 2 1 3 0 3 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 6 0 2 1 3 0 3 1 6 0 3 1 6 0 3 1 6 0 3 1 8 0"/>
-<path stroke="blue" d="M413 597l3 1 9 0 3 1 9 0 3 1 9 0 3 1 11 0 3 1 15 0 3 1 14 0 3 1 24 0 3 1 29 0 3 1 129 0 3 -1 32 0 3 -1 20 0 3 -1 9 0"/>
-<path stroke="#FFA500" d="M85 183l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="192">
-(noise67.inoise_spectrum)
-</text>
-<path stroke="#FFA500" d="M173 529l12 4 3 2 9 3 3 0 3 1 2 1 18 6 3 0 12 4 3 0 3 1 2 1 3 1 3 0 6 2 3 0 6 2 3 0 6 2 3 0 3 1 3 0 2 1 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 5 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 6 0 3 1 6 0 2 1 6 0 3 1 6 0"/>
-<path stroke="#FFA500" d="M387 575l3 1 9 0 3 1 9 0 2 1 9 0 3 1 12 0 3 1 14 0 3 1 15 0 3 1 23 0 3 1 36 0 2 1 100 0 3 -1 35 0 3 -1 21 0 3 -1 14 0 3 -1 12 0 3 -1 9 0 2 -1 9 0 3 -1"/>
-<path stroke="green" d="M439 199l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="208">
-(noise69.inoise_spectrum)
-</text>
-<path stroke="green" d="M173 504l9 3 3 0 18 6 2 1 3 0 9 3 3 0 9 3 3 0 6 2 3 0 3 1 2 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 2 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 5 0 3 1 6 0 3 1 6 0 3 1 6 0 3 1 9 0 3 1 8 0 3 1 9 0 3 1 12 0"/>
-<path stroke="green" d="M405 544l3 1 14 0 3 1 18 0 3 1 23 0 3 1 47 0 3 1 44 0 3 -1 44 0 3 -1 20 0 3 -1 15 0 3 -1 11 0 3 -1 9 0 3 -1 6 0 3 -1 9 0 3 -1 2 0 3 -1 6 0 3 -1 6 0 3 -1 3 0 3 -1 3 0 3 -1 3 0 3 -1 2 0 3 -1 3 0 6 -2"/>
-<path stroke="#FFC0C5" d="M85 199l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="138" y="208">
-(noise71.inoise_spectrum)
-</text>
-<path stroke="#FFC0C5" d="M173 453l3 0 12 4 3 0 6 2 3 0 3 1 2 1 3 0 6 2 3 0 3 1 3 0 3 1 3 0 6 2 3 0 3 1 3 0 2 1 3 0 3 1 6 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 5 0 3 1 3 0 3 1 9 0 3 1 6 0 3 1 9 0 2 1 9 0 3 1 9 0 3 1 12 0 3 1 17 0 3 1 21 0 3 1 38 0 3 1"/>
-<path stroke="#FFC0C5" d="M452 485l52 0 3 -1 32 0 3 -1 18 0 3 -1 12 0 3 -1 8 0 3 -1 6 0 3 -1 6 0 3 -1 6 0 3 -1 3 0 2 -1 6 0 3 -1 3 0 3 -1 3 0 3 -1 3 0 3 -1 3 0 6 -2 3 0 3 -1 2 -1 3 0 9 -3 3 0 24 -8 2 -1 12 -4 3 -2 9 -3 3 -2 3 -1 3 -2 6 -2 2 -2"/>
-<path stroke="#FFC0C5" d="M747 438l3 -2 3 -1 6 -4"/>
-<path stroke="#A52A2A" d="M439 215l43 0"/>
-<text stroke="none" fill="black" font-size="16" x="492" y="224">
-(noise73.inoise_spectrum)
-</text>
-<path stroke="#A52A2A" d="M173 330l3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 2 1 3 0 3 1 6 0 3 1 6 0 3 1 6 0 3 1 6 0 2 1 9 0 3 1 9 0 3 1 9 0 3 1 14 0 3 1 18 0 3 1 35 0 3 1 29 0 3 -1 29 0 3 -1 15 0 3 -1 9 0 3 -1 5 0 3 -1 6 0 3 -1 6 0 3 -1 3 0 3 -1 3 0"/>
-<path stroke="#A52A2A" d="M487 338l3 -1 3 0 3 -1 2 0 3 -1 3 0 3 -1 3 0 9 -3 3 0 12 -4 3 0 2 -1 15 -5 3 -2 12 -4 3 -2 3 -1 3 -2 2 -1 3 -2 3 -1 3 -2 3 -1 27 -18 2 -2 3 -2 3 -3 3 -2 3 -3 3 -2 6 -6 3 -2 12 -12 3 -4 3 -3 2 -3 3 -4 3 -3 3 -4 3 -3 24 -32"/>
-<path stroke="#A52A2A" d="M701 195l3 -5 2 -4 3 -5 3 -4 15 -25 3 -6 6 -10 9 -18 2 -6 6 -12 6 -14"/>
+<path stroke="red" d="M173 87l3 8 3 9 3 8 3 9 18 48 2 8 3 7 3 8 3 7 3 8 18 42 3 6 6 14 2 6 3 6 3 7 18 36 3 5 6 12 3 5 3 6 2 5 3 5 3 6 18 30 3 4 6 10 3 4 3 5 2 4 3 5 9 12 3 5 15 20 3 3 6 8 3 3 2 4 3 4 3 3 3 4 6 6 3 4 21 21 2 3 9 9 3 2 6 6 3 2"/>
+<path stroke="red" d="M434 549l6 6 3 2 3 3 6 4 2 3 9 6 3 3 30 20 2 1 9 6 3 1 6 4 3 1 6 4 3 1 3 2 6 2 2 2 3 1 3 2 6 2 3 2 9 3 3 2 12 4 2 1 39 13 2 0 9 3 3 0 9 3 3 0 6 2 3 0 3 1 3 0 3 1 2 1 3 0 3 1 3 0 3 1 3 0 3 1 3 0 3 1 6 0 3 1 3 0 3 1 5 0 3 1"/>
+<path stroke="red" d="M712 668l6 0 3 1 9 0 3 1 9 0 3 1 14 0"/>
 </svg>

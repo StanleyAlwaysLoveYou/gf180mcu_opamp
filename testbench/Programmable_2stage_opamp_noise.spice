@@ -8,7 +8,8 @@
 .param  sw_stat_mismatch = 0
 .param  sw_stat_global = 0
 
-.include ../netlist/Programmable_2stage_opamp.spice
+.include ../netlist/Programmable_2stage_opamp_wo_res_pex.spice
+X1 vout vout_t vbiasp vbiasn vin2 vin1 vprog vss vdd opamp2
 
 V1 vdd GND 3.3
 V2 vss GND 0
@@ -29,9 +30,9 @@ V7 vbiasn GND dc 1
 
 .control
 
-let begin = 0
+let begin = 1
 let step = 0.1
-let final = 2.5
+let final = 1
 let test = begin
 let cnt = 0
 let ind = ((final-begin)/step)
@@ -42,6 +43,7 @@ set color0 = white
 set color1 = black
 set hcopydevtype = svg
 setcs svg_stropts = ( black Arial Arial )
+set nolegend
 
 set inoise = ' '
 
@@ -84,7 +86,7 @@ end
 
 
 
-plot $inoise xlabel Power(mW) ylabel Integrated_Noise(uV) title Integrated_Noise
+plot $inoise xlabel Frequency ylabel Integrated_Noise(uV) title Integrated_Noise
 plot n vs power xlabel Power(mW) ylabel Integrated_Noise(uV) title 'OTA_2stage Integrated_Noise_vs_Power'
 
 hardcopy ../output/Noise.svg $inoise xlabel  Frequency(Hz) ylabel Integrated_Noise(uV) title 'OTA_2stage Integrated_Noise'
