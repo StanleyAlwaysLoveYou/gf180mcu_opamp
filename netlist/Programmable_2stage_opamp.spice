@@ -2,6 +2,7 @@
 ** Library name: low_noise_opamp
 ** Cell name: opamp2_nodw
 ** View name: schematic
+xmp3 vout_t vss vout vdd pfet_03v3 w=24e-6 l=280e-9 nf=12 as=6.24e-12 ad=6.96e-12 ps=30.24e-6 pd=34.96e-6 nrd=12.083e-3 nrs=10.833e-3 sa=440e-9 sb=440e-9 sd=520e-9 dtemp=0 m=1
 xmp13<2> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
 xmp13<1> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
 xmp13<0> vdd vdd vdd vdd pfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
@@ -36,6 +37,7 @@ xmn24 vdd vdd vdd vdd pfet_03v3 w=45e-6 l=1e-6 nf=1 as=19.8e-12 ad=19.8e-12 ps=9
 xmn23 vdd vdd vdd vdd pfet_03v3 w=44e-6 l=3e-6 nf=1 as=19.36e-12 ad=19.36e-12 ps=88.88e-6 pd=88.88e-6 nrd=10e-3 nrs=10e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
 xc4<0> net1 vout cap_mim_2f0_m4m5_noshield c_length=25e-6 c_width=25e-6 m=4
 xc5<0> net6 vout cap_mim_2f0_m4m5_noshield c_length=25e-6 c_width=25e-6 m=4
+xmn3 vout_t vdd vout vss nfet_03v3 w=12e-6 l=280e-9 nf=12 as=3.12e-12 ad=3.48e-12 ps=18.24e-6 pd=20.96e-6 nrd=24.167e-3 nrs=21.667e-3 sa=440e-9 sb=440e-9 sd=520e-9 dtemp=0 m=1
 xmn25<4> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
 xmn25<3> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1
 xmn25<2> vss vss vss vss nfet_03v3 w=100e-6 l=300e-9 nf=1 as=44e-12 ad=44e-12 ps=200.88e-6 pd=200.88e-6 nrd=4.4e-3 nrs=4.4e-3 sa=440e-9 sb=440e-9 sd=0 dtemp=0 m=1 par=1

@@ -9,6 +9,7 @@
 .param  sw_stat_global = 0
 
 .include ../netlist/Programmable_2stage_opamp.spice
+*X1 vout vout_t vbiasp vbiasn vin2 vin1 vprog vss vdd opamp2
 
 V1 vdd GND 3.3
 V2 vss GND 0
@@ -37,7 +38,7 @@ set color0 = white
 set color1 = black
 set hcopydevtype = svg
 setcs svg_stropts = ( black Arial Arial )
-
+set nolegend
 
 
 set tranout = ' '

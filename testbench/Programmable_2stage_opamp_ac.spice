@@ -8,9 +8,8 @@
 .param  sw_stat_mismatch = 0
 .param  sw_stat_global = 0
 
-.include ../netlist/Programmable_2stage_opamp.spice
-*X1 vbiasn vbiasp vdd vin1 vin2 vout vp vss opamp2
-
+.include ../netlist/Programmable_2stage_opamp_wo_res_pex.spice
+X1 vout vout_t vbiasp vbiasn vin2 vin1 vprog vss vdd opamp2
 
 V1 vdd GND 3.3
 V2 vss GND 0
@@ -31,9 +30,9 @@ V7 vbiasn GND dc 1
 
 .control
 
-let begin = 2
+let begin = 1
 let step = 0.1
-let final = 2
+let final = 1
 let test = begin
 let cnt = 0
 
@@ -42,7 +41,7 @@ set color1 = black
 set hcopydevtype = svg
 setcs svg_stropts = ( black Arial Arial )
 
-
+set nolegend
 
 set gain = ' '
 set phasedeg = ' '
