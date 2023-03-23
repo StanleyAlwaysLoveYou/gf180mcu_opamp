@@ -23,110 +23,106 @@ ac1: OTA_2stage_Gain_vs_Power
 <text stroke="none" fill="black" font-size="16" x="80" y="728">
 5.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M156 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="141" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M161 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="146" y="728">
 5.1
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M217 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="202" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M227 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="212" y="728">
 5.2
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M278 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="263" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M293 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="278" y="728">
 5.3
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M339 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="324" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M359 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="344" y="728">
 5.4
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M400 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="385" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M425 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="410" y="728">
 5.5
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M461 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="446" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M491 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="476" y="728">
 5.6
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M522 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="507" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M557 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="542" y="728">
 5.7
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M583 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="568" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M623 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="608" y="728">
 5.8
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M644 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="629" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M689 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="674" y="728">
 5.9
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M705 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="690" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M755 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="740" y="728">
 6.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M766 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="751" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M821 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="806" y="728">
 6.1
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M827 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="812" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M887 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="872" y="728">
 6.2
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M888 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="873" y="728">
+<path stroke="black" stroke-dasharray="1,2" d="M953 704l0 -638"/>
+<text stroke="none" fill="black" font-size="16" x="938" y="728">
 6.3
-</text>
-<path stroke="black" stroke-dasharray="1,2" d="M949 704l0 -638"/>
-<text stroke="none" fill="black" font-size="16" x="934" y="728">
-6.4
 </text>
 <text stroke="none" fill="black" font-size="16" x="614" y="752">
 m     
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 704l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 704l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="53" y="712">
 88.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 646l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 646l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="53" y="654">
 90.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 588l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 588l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="53" y="596">
 92.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 530l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 530l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="53" y="538">
 94.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 472l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 472l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="53" y="480">
 96.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 414l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 414l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="53" y="422">
 98.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 356l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 356l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="364">
 100.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 298l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 298l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="306">
 102.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 240l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 240l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="248">
 104.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 182l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 182l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="190">
 106.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 124l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 124l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="132">
 108.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M95 66l854 0"/>
+<path stroke="black" stroke-dasharray="1,2" d="M95 66l858 0"/>
 <text stroke="none" fill="black" font-size="16" x="43" y="74">
 110.0
 </text>
