@@ -8,8 +8,8 @@
 .param  sw_stat_mismatch = 0
 .param  sw_stat_global = 0
 
-.include ../netlist/Programmable_2stage_opamp_wo_res_pex.spice
-X1 vout vout_t vbiasp vbiasn vin2 vin1 vprog vss vdd opamp2
+.include ../netlist/Programmable_2stage_opamp_pex.spice
+*X1 vout vout_t vbiasp vbiasn vin2 vin1 vprog vss vdd opamp2
 
 V1 vdd GND 3.3
 V2 vss GND 0
