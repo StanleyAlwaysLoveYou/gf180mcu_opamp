@@ -1552,7 +1552,7 @@ XMMP13<2>@2 N_VDD_MMP13<2>@3_s N_VDD_MMP13<2>@2_g N_VDD_MMP13<2>@2_s
 + N_VDD_MMP14<1>_b PMOS_3P3 L=3e-07 W=1e-05 AD=4.4e-12 AS=2.6e-12 PD=2.088e-05
 + PS=1.052e-05 NRD=0.044 NRS=0.026 M=1 NF=1 PAR=1
 *
-
+.include "opamp2_hspice.pex.netlist.OPAMP2_NODW.pxi"
 *
 .ends
 *
