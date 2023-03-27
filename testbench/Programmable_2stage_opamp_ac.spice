@@ -11,7 +11,6 @@
 
 .include ../netlist/Programmable_2stage_opamp_pex.spice
 X1 vout vout_t vbiasp vbiasn vin2 vin1 vprog vss vdd opamp2
-*X1 VBIASN VBIASP VDD VIN1 VIN2 VOUT VOUT_T VPROG VSS opamp2_nodw
 
 V1 vdd GND 3.3
 V2 vss GND 0
@@ -32,9 +31,9 @@ V7 vbiasn GND dc 1
 
 .control
 
-let begin = 1
+let begin = 0
 let step = 0.1
-let final = 1
+let final = 2
 let test = begin
 let cnt = 0
 

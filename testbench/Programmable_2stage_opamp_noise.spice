@@ -31,9 +31,9 @@ V7 vbiasn GND dc 1
 
 .control
 
-let begin = 1
+let begin = 0
 let step = 0.1
-let final = 1
+let final = 2
 let test = begin
 let cnt = 0
 let ind = ((final-begin)/step)
